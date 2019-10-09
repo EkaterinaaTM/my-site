@@ -1,0 +1,22 @@
+@import "var.scss";
+
+body {
+  background: $bg-color;
+  color: $main-text-color;
+  margin: 0;
+}
+
+.main {
+  display: flex;
+}
+
+.content {
+  width: calc(100% - 240px);
+  height: 100vh;
+}
+
+.sidebar {
+  width: 240px;
+  height: 100vh;
+  background-color: $primary-color;
+}
