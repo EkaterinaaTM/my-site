@@ -1,13 +1,40 @@
 @import "var.scss";
+@import "normalize.scss";
+@import "reset.scss";
+@import "components/sidebar.scss";
+@import "mixins.scss";
+@import "components/myWorks.scss";
+@import "components/container.scss";
+@import "components/about.scss";
+@import "components/contacts.scss";
+
+@import url("https://fonts.google.com/specimen/Muli?selection.family=Muli:200, 300,400");
+
+html {
+  box-sizing: border-box;
+  // overflow: hidden;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
 body {
   background: $bg-color;
   color: $main-text-color;
   margin: 0;
+  font-family: "Muli", sans-serif;
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 130%;
+  color: white;
 }
 
 .main {
   display: flex;
+  justify-content: space-between;
 }
 
 .content {
@@ -15,8 +42,20 @@ body {
   height: 100vh;
 }
 
-.sidebar {
-  width: 240px;
-  height: 100vh;
-  background-color: $primary-color;
+.title-h1 {
+  font-weight: 200;
+  font-size: 64px;
+  margin-bottom: 72px;
+  text-align: center;
+  text-shadow: 0px -2px 0px rgba(0, 0, 0, 0.5), 0 0 5px rgba(255, 255, 255, 0.8),
+    0 -4px 15px rgba(255, 255, 255, 0.5);
+}
+
+.subtitle {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.link {
+  border-bottom: 1px solid white;
 }

@@ -1,0 +1,37 @@
+.about {
+  width: 100%;
+  margin: 0 auto;
+
+  &_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &_photo-wrapper {
+    width: 30%;
+    min-width: 390px;
+    height: 510px;
+    margin: 0 24px 32px 0;
+  }
+
+  &_photo {
+    width: 100%;
+    height: 100%;
+    transition: all 0.6s;
+    &:hover {
+      transform: translate3d(-10px, -10px, 0);
+    }
+  }
+
+  &_text {
+    width: 700%;
+    margin-bottom: 32px;
+  }
+  @media (max-width: 1240px) {
+    &_wrapper {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+}
